@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 import uuid
 from werkzeug.utils import secure_filename
 import os
+import threading
+from generate_process import text_to_audio, create_reel
 
 UPLOAD_FOLDER = 'user_uploads'
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
@@ -9,6 +11,7 @@ ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
+os.makedirs('static/reels', exist_ok=True)
 
 @app.route("/")
 def home():
@@ -23,7 +26,6 @@ def create():
         desc = request.form.get("text")
         input_files = []
 
-        # create folder once before the loop
         folder_path = os.path.join(app.config['UPLOAD_FOLDER'], rec_id)
         os.makedirs(folder_path, exist_ok=True)
 
@@ -35,7 +37,6 @@ def create():
                 file.save(os.path.join(folder_path, filename))
                 input_files.append(filename)
 
-        # save description
         with open(os.path.join(folder_path, "desc.txt"), "w") as f:
             f.write(desc)
 
@@ -43,10 +44,22 @@ def create():
             with open(os.path.join(app.config['UPLOAD_FOLDER'], rec_id, "input.txt"), "a") as inp:
                 inp.write(f"file '{f}'\nduration 1\n")
 
+        # run reel creation in background thread
+        def process():
+            text_to_audio(rec_id)
+            create_reel(rec_id)
+            with open("done.txt", "a") as f:
+                f.write(rec_id + "\n")
+
+        thread = threading.Thread(target=process)
+        thread.start()
+
     return render_template("create.html", myid=myid)
 
 @app.route("/gallery")
 def gallery():
-    return render_template("gallery.html")
+    reels = os.listdir("static/reels")
+    print(reels)
+    return render_template("gallery.html", reels=reels)
 
 app.run(debug=True)
