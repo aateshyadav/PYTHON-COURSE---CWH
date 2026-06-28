@@ -21,6 +21,7 @@ def create():
         print(request.files.keys())
         rec_id = request.form.get("uuid")
         desc = request.form.get("text")
+        input_files = []
 
         # create folder once before the loop
         folder_path = os.path.join(app.config['UPLOAD_FOLDER'], rec_id)
@@ -32,10 +33,15 @@ def create():
             if file:
                 filename = secure_filename(file.filename)
                 file.save(os.path.join(folder_path, filename))
+                input_files.append(filename)
 
         # save description
         with open(os.path.join(folder_path, "desc.txt"), "w") as f:
             f.write(desc)
+
+        for f in input_files:
+            with open(os.path.join(app.config['UPLOAD_FOLDER'], rec_id, "input.txt"), "a") as inp:
+                inp.write(f"file '{f}'\nduration 1\n")
 
     return render_template("create.html", myid=myid)
 
