@@ -1,24 +1,43 @@
+<div align="center">
+
 # 🐍 Complete 2026 Python Bootcamp — My Learning Journey
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![Progress](https://img.shields.io/badge/Progress-12%2F16%20Sections-blue)](#)
-[![Daily Commits](https://img.shields.io/badge/Updates-Daily-brightgreen)](#)
+[![Progress](https://img.shields.io/badge/Progress-16%2F16%20Sections-success)](#)
+[![Completed](https://img.shields.io/badge/Status-Completed%20🎉-brightgreen)](#)
+[![Certificate](https://img.shields.io/badge/Udemy-Certified-A435F0?style=flat&logo=udemy&logoColor=white)](https://ude.my/UC-7a5e3503-8486-4c7c-b0f0-b81406f9ba49)
 
-Welcome to my personal learning repository for **Complete 2026 Python Bootcamp: Learn Python from Scratch**! 🚀
+<br/>
 
-This repo documents my day-by-day journey from Python fundamentals to building real-world, AI-powered applications. Every file here is code I've written while working through the course — no shortcuts, just consistent daily practice.
+> 🎓 **Course completed on June 29, 2026** — Certificate No. UC-7a5e3503-8486-4c7c-b0f0-b81406f9ba49
+
+</div>
+
+Welcome to my personal learning repository for **Complete 2026 Python Bootcamp: Learn Python from Scratch** by **Haris Ali Khan & Rohan Das** on Udemy! 🚀
+
+This repo documents my journey from Python fundamentals to building real-world, AI-powered applications. Every file here is code I've written while working through the course — no shortcuts, just consistent daily practice.
 
 > 📅 **Started:** 27th May 2026
-> 🔁 **Update frequency:** Daily
+> ✅ **Completed:** 29th June 2026
+> ⏱️ **Total Duration:** 17.5 hours
 > 🎯 **Goal:** Build genuine, job-ready Python skills
+
+---
+
+## 🏆 Certificate of Completion
+
+Successfully completed **Complete 2026 Python Bootcamp: Learn Python from Scratch** on Udemy.
+
+🔗 [View Certificate](https://ude.my/UC-7a5e3503-8486-4c7c-b0f0-b81406f9ba49)
 
 ---
 
 ## 📖 About the Course
 
-This is a comprehensive, project-based bootcamp covering Python from absolute basics to advanced, real-world application development — including web apps, automation, and AI-powered tools.
+A comprehensive, project-based bootcamp covering Python from absolute basics to advanced, real-world application development — including web apps, automation, and AI-powered tools.
 
-### What I'm Learning
+### What I Learned
+
 - 🔤 **Python Fundamentals** — variables, data types, loops, conditionals
 - 🏗️ **Object-Oriented Programming (OOP)** — classes, objects, inheritance
 - 🌐 **Flask** — building full-stack web applications
@@ -33,7 +52,7 @@ This is a comprehensive, project-based bootcamp covering Python from absolute ba
 ## ✅ Course Sections Progress
 
 | # | Section | Status |
-|---|---------|--------|
+|:---:|:--------|:------:|
 | 1 | Section 1 | ✅ Done |
 | 2 | Section 2 | ✅ Done |
 | 3 | Section 3 | ✅ Done |
@@ -46,18 +65,16 @@ This is a comprehensive, project-based bootcamp covering Python from absolute ba
 | 10 | Section 10 | ✅ Done |
 | 11 | Section 11 | ✅ Done |
 | 12 | Section 12 | ✅ Done |
-| 13 | Section 13 | 🔄 In Progress |
-| 14 | Section 14 | ⏳ Upcoming |
-| 15 | Section 15 | ⏳ Upcoming |
-| 16 | Section 16 — VidSnapAI Capstone | ⏳ Upcoming |
+| 13 | Section 13 | ✅ Done |
+| 14 | Section 14 | ✅ Done |
+| 15 | Section 15 | ✅ Done |
+| 16 | Section 16 — VidSnapAI Capstone | ✅ Done |
 
-> 🔥 **75% done — almost there!**
+> 🎉 **All 16 sections complete — 17.5 hours of Python mastered!**
 
 ---
 
 ## 🗂️ Repository Structure
-
-
 
 ```
 ├── 01_basics/              # Variables, data types, operators
@@ -67,12 +84,10 @@ This is a comprehensive, project-based bootcamp covering Python from absolute ba
 ├── 05_file_handling/       # File I/O & automation
 ├── 06_web_scraping/        # Requests & web scraping projects
 ├── 07_flask_apps/          # Flask backend projects
-├── projects/                # Mini-projects (calculators, games, scripts)
-├── vidsnapai/                # 🎬 VidSnapAI — AI-powered SaaS project
+├── projects/               # Mini-projects (calculators, games, scripts)
+├── vidsnapai/              # 🎬 VidSnapAI — AI-powered SaaS capstone project
 └── README.md
 ```
-
-*(Folders will grow and evolve as the course progresses — this structure updates daily.)*
 
 ---
 
@@ -84,7 +99,8 @@ This is a comprehensive, project-based bootcamp covering Python from absolute ba
 
 ## 🌟 Why This Repo Exists
 
-I'm documenting this journey publicly to:
+I documented this journey publicly to:
+
 - ✅ Stay consistent and accountable with daily practice
 - ✅ Track measurable, honest progress over time
 - ✅ Build a real portfolio of work I've actually written myself
@@ -96,6 +112,9 @@ I'm documenting this journey publicly to:
 
 Feel free to follow along, star ⭐ this repo, or reach out if you're on a similar learning journey!
 
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/your-profile)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/your-username)
+
 ---
 
-<p align="center"><i>"From Python novice to confident coder — one day, one commit at a time."</i></p>
+<p align="center"><i>"From Python novice to confident coder — one commit at a time. ✅"</i></p>
